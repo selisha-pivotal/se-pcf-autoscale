@@ -7,4 +7,6 @@ source "http://rubygems.org/"
 # declare the sinatra dependency
 gem "sinatra" 
 
+#For Travis
+gem "rake"
 
