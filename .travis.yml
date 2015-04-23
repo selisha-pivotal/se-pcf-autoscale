@@ -1,3 +1,15 @@
 language: ruby
 rvm:
-  - 2.0.0
+- 2.0.0
+deploy:
+  edge: true
+  provider:
+    provider: cloudfoundry
+  api: https://api.system.dcin5.com
+  username: selisha@pivotal.io
+  password:
+    secure: WW2lSMfKTOOUlhA3241mhjg77onUMiermxKImBtugIcWC/LuV+bY1qC9T38YDDwU8YrNhk/W7+fuUWxbZHHNhw70I6r7DnBo8bRr3nJ9CREryaZ1ms/8RYl6XaF6Qv0pmFMrWYWKjoSvysDQ3thsSEtVCGYyO9ytcC4StM1R1OA=
+  organization: APJ
+  space: development
+  on:
+    repo: selisha-pivotal/se-pcf-autoscale
