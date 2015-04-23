@@ -3,6 +3,7 @@ rvm:
 - 2.0.0
 deploy:
   edge: true
+  all_braches: true
   provider:
     provider: cloudfoundry
   api: https://api.system.dcin5.com
