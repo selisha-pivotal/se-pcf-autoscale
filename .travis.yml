@@ -3,8 +3,7 @@ rvm:
 - 2.0.0
 deploy:
   edge: true
-  provider:
-    provider: cloudfoundry
+  provider: cloudfoundry
   api: https://api.system.dcin5.com
   username: selisha@pivotal.io
   password:
