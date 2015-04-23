@@ -3,7 +3,6 @@ rvm:
 - 2.0.0
 deploy:
   edge: true
-  all_braches: true
   provider:
     provider: cloudfoundry
   api: https://api.system.dcin5.com
@@ -13,4 +12,5 @@ deploy:
   organization: APJ
   space: development
   on:
+    all_branches: true
     repo: selisha-pivotal/se-pcf-autoscale
