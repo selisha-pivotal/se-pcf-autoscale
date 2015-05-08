@@ -1,6 +1,6 @@
 ---
 applications:
-- name: scale-demo
+- name: se-scale-demo
   memory: 128M
   instances: 1
   host: se-demo-scale
