@@ -1,0 +1,33 @@
+
+
+---
+jobs:
+- name: job-deploy-app
+  public: true
+  serial: true
+  plan:
+  - get: se-pcf-autoscale
+  - put: se-pcf-autoscale-app
+    params:
+      manifest: se-pcf-autoscale-app/manifest.yml
+      path: se-pcf-autoscale-app
+      branch: master
+
+
+resources:
+- name: se-pcf-autoscale
+  type: git
+  source:
+    uri: https://github.com/selisha-pivotal/se-pcf-autoscale.git
+
+- name: se-pcf-autoscale-app
+  type: cf
+  source:
+    api: https://api.run.pivotal.io
+    username: selisha@pivotal.io
+    password: [Magniv01]
+    organization: APJ
+    space: Development
+    skip_cert_check: false
+
+
